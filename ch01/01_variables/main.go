@@ -22,11 +22,14 @@ func main() {
 	// Multiple variable initialisation
 	length, width = 1.2, 2.4
 
+	// Short variable declaration
+	area := length * width
+
 	fmt.Println(customerName)
 
 	fmt.Println("Has orderded", quantity, "sheets")
 
 	fmt.Println("each with an area of")
 
-	fmt.Println(length*width, "square meters")
+	fmt.Println(area, "square meters")
 }
