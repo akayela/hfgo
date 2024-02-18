@@ -3,8 +3,9 @@ package main
 
 import (
 	"fmt"
-	"keyboard"
 	"log"
+
+	"github.com/akayela/keyboard"
 )
 
 func main() {
