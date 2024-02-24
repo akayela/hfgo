@@ -21,13 +21,13 @@ func GetFloats(fileName string) ([]float64, error) {
 			return numbers, err
 		}
 		numbers = append(numbers, number)
-		err = file.Close()
-		if err != nil {
-			return numbers, err
-		}
-		if scanner.Err() != nil {
-			return numbers, scanner.Err()
-		}
-		return numbers, nil
 	}
+	err = file.Close()
+	if err != nil {
+		return numbers, err
+	}
+	if scanner.Err() != nil {
+		return numbers, scanner.Err()
+	}
+	return numbers, nil
 }
