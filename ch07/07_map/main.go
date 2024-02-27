@@ -29,7 +29,9 @@ func main() {
 		"daughter": "Nicole",
 		"son":      "Donne",
 	}
-	fmt.Println(teamKayela["dad"])
+	for role, name := range teamKayela {
+		fmt.Printf("%s is the only %s in team Kayela\n", name, role)
+	}
 
 	// initialize a map and a bool to check assignment
 	counters := map[string]int{"a": 3, "b": 0}
@@ -47,6 +49,10 @@ func main() {
 		"tech1": "Thabo",
 		"tech2": "Abel",
 		"tech3": "Tebogo",
+	}
+
+	for role, name := range teamCorner {
+		fmt.Printf("%s is %s in team Corner\n", name, role)
 	}
 
 	tech1, ok := teamCorner["tech1"]
